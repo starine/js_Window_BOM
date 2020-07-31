@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        function greet(){
+            alert("帅哥美女们，晚上好！");
+        }
+        function startTimeout(){
+            window.setTimeout("greet()",2000);
+        }
+        var interval;//存储interval定时对象
+        function startInterval(){
+            interval = window.setInterval("greet()",2000);
+        }
+
+        function deleteInterval(){
+            window.clearInterval(interval);//移除定时对象
+        }
+
+    </script>
+</head>
+<body>
+    <input type="button" value="setTimeout的使用" onclick="startTimeout()" />
+    <input type="button" value="setInterval的使用" onclick="startInterval()" />
+    <input type="button" value="移除setInterval" onclick="deleteInterval()" />
+</body>
+</html>

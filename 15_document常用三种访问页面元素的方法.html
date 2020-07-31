@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        function changeText(){
+            var d = document.getElementById("divMessage");//根据ID获取元素
+            d.innerHTML = "才是真的好";//设置元素的内容
+        }
+
+        function showSubject(){
+            var subjects = document.getElementsByName("subject");//根据name获取元素，返回的是一个集合
+            var result = "";
+            for(var i=0;i<subjects.length;i++){
+                result += subjects[i].innerHTML;
+            }
+            alert(result);
+        }
+
+        function showDiv(){
+            var divs = document.getElementsByTagName("div");//根据标签名称获取元素，返回的是一个集合
+            var result = "";
+            for(var i=0;i<divs.length;i++){
+                result += divs[i].innerHTML;
+            }
+            alert(result);
+        }
+    </script>
+</head>
+<body>
+    <div id="divMessage">大家好</div>
+    <input type="button" value="getElementById" onclick="changeText()" />
+    <br>
+    <div name="subject">C#</div>
+    <div name="subject">java</div>
+    <div name="subject">html</div>
+    <div name="subject">javascript</div>
+    <input type="button" value="getElementsByName" onclick="showSubject()" />
+    <input type="button" value="getElementsByTagName" onclick="showDiv()" />
+</body>
+</html>

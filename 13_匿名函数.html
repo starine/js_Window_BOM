@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        //窗体加载事件(方法一)
+//        window.onload = function(){//匿名函数
+//            alert("大家好！");
+//        }
+
+        function greet(){
+            alert("大家好！");
+        }
+        //窗体加载事件(方法二)
+        window.onload = greet;//注意：greet后面不要加小括号
+
+        var m = function(){
+            alert("大家好！");
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="问候" onclick="m()" >
+</body>
+</html>

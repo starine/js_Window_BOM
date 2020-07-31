@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        function show(){
+            for(var i=1;i<=5;i++){
+                document.write("hello world!<br>")
+            }
+        }
+        function show2(num){
+            for(var i=1;i<=num;i++){
+                document.write("hello world!<br>")
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="输出5次helloworld" onclick="show()" />
+    <input type="button" value="输出helloworld" onclick="show2(prompt('请输入次数'))" />
+</body>
+</html>

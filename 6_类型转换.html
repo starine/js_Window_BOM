@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        var a = "23";
+        a = parseInt(a);
+        document.write(a+1);
+        document.write("<br>");
+
+        var b = "26abc";
+        b = parseInt(b);//从左边开始解析，遇到不能解析的字符就停止
+        document.write(b);
+        document.write("<br>");
+
+        var c = "a24bc";
+        c = parseInt(c);
+        document.write(c);//输出NaN(not a number)
+    </script>
+</head>
+<body>
+
+</body>
+</html>
